@@ -29,7 +29,7 @@ export default function Auth() {
         .then((data) => {
           const options = { path: "/" };
           cookie.set("access_token", data.access, options);
-        })
+        });
       router.push("/main-page");
     } catch (err) {
       alert(err);
@@ -50,7 +50,7 @@ export default function Auth() {
           },
         }).then((res) => {
           if (res.status === 400) {
-            throw "authentication failed3333";
+            throw "authentication failed";
           }
         });
         login();
