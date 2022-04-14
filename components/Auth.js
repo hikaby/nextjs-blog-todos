@@ -69,7 +69,7 @@ export default function Auth() {
           alt="Workflow"
         />
         <h2 className="mt-6 text-center text-3xl font-extrabold text-white">
-          {isLogin ? "Login" : "Sign up"}
+          {isLogin ? "Login to todo" : "Sign up"}
         </h2>
       </div>
       <form className="mt-8 space-y-6" onSubmit={authUser}>
